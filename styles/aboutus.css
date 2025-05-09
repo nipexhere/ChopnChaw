@@ -1,0 +1,234 @@
+/* General Styles */
+body {
+    font-family: 'Cinzel Decorative', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, #f5deb3, #ffefd5); /* Warm background */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #ff6600, #800020);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header .brand {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* About Section */
+.about-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #800020;
+}
+
+.about-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Team Section */
+.team-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.team-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #800020;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.team-member {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.team-member h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.team-member p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Footer */
+footer {
+    background: #800020;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .social-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+footer .social-icon {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer .social-icon:hover {
+    color: #ff6600;
+    transform: scale(1.2);
+}
+
+/* Social Media Icons */
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between icons */
+  }
+  
+  .social-icon {
+    color: white; /* Default icon color */
+    font-size: 1.5rem; /* Icon size */
+    text-decoration: none; /* Remove underline */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .social-icon:hover {
+    color: #ff6600; /* Change color on hover */
+    transform: scale(1.2); /* Slightly enlarge icon on hover */
+  }
+  
+  /* Specific Colors for Each Icon */
+  .social-icon .fa-whatsapp {
+    color: #25D366; /* WhatsApp green */
+  }
+  
+  .social-icon .fa-envelope {
+    color: #D44638; /* Email red */
+  }
+  
+  .social-icon .fa-tiktok {
+    color: #69C9D0; /* TikTok blue */
+  }
+  
+  .social-icon .fa-instagram {
+    color: #E1306C; /* Instagram pink */
+  }
+
+
+  /* Mobile (up to 600px) */
+@media screen and (max-width: 600px) {
+    body {
+      font-size: 14px;
+      line-height: 1.4;
+    }
+  
+    header {
+      padding: 10px;
+    }
+  
+    header .brand {
+      font-size: 1.5rem;
+    }
+  
+    .about-section {
+      padding: 30px 15px;
+    }
+  
+    .about-section h2 {
+      font-size: 2rem;
+    }
+  
+    .about-section p {
+      font-size: 1rem;
+    }
+  
+    .team-section {
+      padding: 30px 15px;
+    }
+  
+    .team-section h2 {
+      font-size: 2rem;
+    }
+  
+    .team-grid {
+      grid-template-columns: 1fr; /* Stack team members */
+    }
+  
+    .team-member img {
+      width: 80%;
+    }
+  
+    footer {
+      padding: 15px;
+    }
+  
+    .social-icons {
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+  }
+  
+  /* Tablet (601px to 1024px) */
+  @media screen and (min-width: 601px) and (max-width: 1024px) {
+    header {
+      padding: 15px;
+    }
+  
+    header .brand {
+      font-size: 1.8rem;
+    }
+  
+    .about-section h2 {
+      font-size: 2.2rem;
+    }
+  
+    .team-section h2 {
+      font-size: 2.2rem;
+    }
+  
+    .team-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .team-member img {
+      width: 90%;
+    }
+  }
+  
+  
+  

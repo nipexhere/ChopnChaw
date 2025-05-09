@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Lilita+One&family=Poetsen+One&family=Rubik+Vinyl&display=swap');
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background: linear-gradient(to bottom, #f5deb3, #ffefd5); /* Warm background */
+  
+}
+body {
+  font-family: 'poetsen one', sans-serif;
+  line-height:1.4;
+  
+color: #333;
+}
+
+body p {
+  color: #333;
+}
+header {
+  background-color:  #80002067 ;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.nav-bar {
+  position: relative; /* Set relative positioning for the navbar */
+  display: flex;
+  justify-content: center; /* Center the brand horizontally */
+  align-items: center; /* Center the content vertically */
+  height: 60px; /* Adjust the height of the navbar */
+  padding: 0 20px;
+  background: linear-gradient(to right, #ff6600, #800020); /* Optional: Navbar background */
+}
+
+.brand {
+  position: absolute; /* Position the brand absolutely within the navbar */
+  left: 50%; /* Move it to the horizontal center */
+  transform: translateX(-50%); /* Adjust for proper centering */
+  font-size: 1.5rem; /* Adjust font size if needed */
+  color: rgba(2, 5, 44, 0.521); /* Ensure the text is visible */
+  text-align: center; /* Center the text */
+}
+
+/* Side Menu */
+.side-menu {
+  position: absolute;
+  top: 0;
+  right: -250px; /* Hidden by default */
+  width: 250px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0); /* Transparent background */
+  color: rgba(2, 5, 44, 0.521);
+  padding-top: 40px;
+  transition: right 0.3s ease;
+  z-index: 1001;
+}
+
+.side-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.side-menu ul li {
+  padding: 10px 20px;
+}
+
+.side-menu ul li a {
+  text-decoration: none;
+  color: rgb(2, 2, 22);
+  font-weight: bold;
+}
+.side-menu ul li a:hover {
+  color: #ff6600;
+}
+
+/* Show the side menu when the .show class is added */
+.side-menu.show {
+  right: 0;
+}
+/* Hamburger Button */
+.hamburger {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 30px;
+  z-index: 1001;
+}
+
+.hamburger-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.hamburger-inner {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+
+/*logo*/
+.logoo {
+  display: flex;
+  padding-top: 100px;
+  padding-bottom: none;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  width: 100%; /* Ensure the logo container takes full width */
+  height: 100%; /* Ensure the logo container takes full height */
+  position: relative;
+  z-index: 101;
+  text-align: center;
+  }
+  .logo img {
+  max-height: 200px;
+  max-width: 350px;
+  border-radius: 100px;
+  display: block;
+  margin:0;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  }
+  @keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+  }
+
+/* Drinks Section */
+.drinks-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.drinks-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #800020;
+}
+
+.drinks-section p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+/* Drinks Grid */
+.drinks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.drink-item {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.drink-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease; /* Smooth transition for image */
+}
+
+.drink-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.drink-item p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Hover Effects */
+.drink-item:hover {
+  transform: scale(1.05); /* Slightly enlarge the card */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow */
+}
+
+.drink-item:hover img {
+  transform: scale(1.1); /* Slightly enlarge the image */
+}
+
+/* Footer */
+footer {
+  background: #80002067;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+footer ul li {
+  margin-bottom: 10px;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+footer ul li a:hover {
+  color: #ff6600;
+}
+
+/* Social Media Icons */
+.social-icons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Space between icons */
+}
+
+.social-icon {
+  color: white; /* Default icon color */
+  font-size: 1.5rem; /* Icon size */
+  text-decoration: none; /* Remove underline */
+  transition: transform 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+.social-icon:hover {
+  color: #ff6600; /* Change color on hover */
+  transform: scale(1.2); /* Slightly enlarge icon on hover */
+}
+
+/* Specific Colors for Each Icon */
+.social-icon .fa-whatsapp {
+  color: #25D366; /* WhatsApp green */
+}
+
+.social-icon .fa-envelope {
+  color: #D44638; /* Email red */
+}
+
+.social-icon .fa-tiktok {
+  color: #69C9D0; /* TikTok blue */
+}
+
+.social-icon .fa-instagram {
+  color: #E1306C; /* Instagram pink */
+}
+
+
+/* Mobile (up to 600px) */
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  .nav-bar {
+    flex-direction: column;
+    padding: 10px;
+    height: auto;
+  }
+
+  .brand {
+    font-size: 1.2rem;
+  }
+
+  .side-menu {
+    width: 200px;
+  }
+
+  
+  .nav-bar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .brand {
+    position: static;
+    transform: none;
+    text-align: center;
+    width: 100%;
+  }
+  .side-menu {
+    right: -250px; /* Ensure it's off-screen initially */
+    display: none; /* Hide it completely */
+  }
+
+  .side-menu.show {
+    display: block; /* Show when the class is toggled */
+    right: 0;
+  }
+  header {
+    flex-direction: column;
+    height: 50px; /* Reduce height */
+    padding: 5px 10px; /* Adjust padding */
+  }
+  .hamburger {
+    position: absolute;
+    left: 15px; /* Move it to the left */
+    top: 10px;
+  }
+
+  .drinks-grid {
+    grid-template-columns: 1fr; /* Stack items */
+  }
+
+  .drink-item img {
+    width: 80%;
+  }
+
+  .logoo {
+    padding-top: 50px;
+  }
+
+  .logo img {
+    max-width: 250px;
+  }
+}
+
+/* Tablet (601px to 1024px) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .nav-bar {
+    padding: 15px;
+  }
+
+  .brand {
+    font-size: 1.5rem;
+  }
+
+  .drinks-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .drink-item img {
+    width: 90%;
+  }
+}
+
