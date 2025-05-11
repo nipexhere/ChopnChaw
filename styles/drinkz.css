@@ -31,32 +31,33 @@ header {
 }
 
 .nav-bar {
-  position: relative; /* Set relative positioning for the navbar */
+  position: relative;  
   display: flex;
-  justify-content: center; /* Center the brand horizontally */
-  align-items: center; /* Center the content vertically */
-  height: 60px; /* Adjust the height of the navbar */
+  justify-content: center;  
+  align-items: center;
+  height: 60px; 
   padding: 0 20px;
-  background: linear-gradient(to right, #ff6600, #800020); /* Optional: Navbar background */
+  background: linear-gradient(to right, #ff6600, #800020); 
 }
 
 .brand {
-  position: absolute; /* Position the brand absolutely within the navbar */
-  left: 50%; /* Move it to the horizontal center */
-  transform: translateX(-50%); /* Adjust for proper centering */
-  font-size: 1.5rem; /* Adjust font size if needed */
-  color: rgba(2, 5, 44, 0.521); /* Ensure the text is visible */
-  text-align: center; /* Center the text */
+  position: absolute; 
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.5rem; 
+  color: rgba(2, 5, 44, 0.521);
+  text-align: center; 
 }
+
 
 /* Side Menu */
 .side-menu {
   position: absolute;
   top: 0;
-  right: -250px; /* Hidden by default */
+  right: -250px; 
   width: 250px;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0); /* Transparent background */
+  background-color: rgba(255, 255, 255, 0); 
   color: rgba(2, 5, 44, 0.521);
   padding-top: 40px;
   transition: right 0.3s ease;
@@ -113,7 +114,6 @@ header {
   border-radius: 3px;
   transition: all 0.3s ease-in-out;
 }
-
 
 /*logo*/
 .logoo {
@@ -326,6 +326,8 @@ footer ul li a:hover {
     left: 15px; /* Move it to the left */
     top: 10px;
   }
+
+
 
   .drinks-grid {
     grid-template-columns: 1fr; /* Stack items */
